@@ -9,8 +9,7 @@ var UAPGenerator = module.exports = function UAPGenerator(args, options, config)
   this.on('end', function () {
     this.installDependencies({ skipInstall: options['skip-install'] });
   });
-  // console.log(__dirname + '=========');
-  this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, './templates/_package.json')));
+  this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../../package.json')));
 };
 
 util.inherits(UAPGenerator, yeoman.generators.Base);
