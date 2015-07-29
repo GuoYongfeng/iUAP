@@ -1,6 +1,6 @@
 {
   "name": "generator-iuap",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
@@ -19,8 +19,10 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.19.0",
     "chalk": "^1.0.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.8.0",
+    "yeoman-generator": "^0.19.0",
     "yosay": "^1.0.2"
   },
   "devDependencies": {

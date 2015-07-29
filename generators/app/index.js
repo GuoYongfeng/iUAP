@@ -9,9 +9,8 @@ var UAPGenerator = module.exports = function UAPGenerator(args, options, config)
   this.on('end', function () {
     this.installDependencies({ skipInstall: options['skip-install'] });
   });
-  // console.log(path.join(__dirname, '../package.json'));
-  // debugger;
-  this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../../package.json')));
+  // console.log(__dirname + '=========');
+  this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, './templates/_package.json')));
 };
 
 util.inherits(UAPGenerator, yeoman.generators.Base);
@@ -49,31 +48,28 @@ UAPGenerator.prototype.askFor = function askFor() {
 };
 
 UAPGenerator.prototype.app = function app() {
-  var _base = this.src._base;
-  var _dest = this.src._destBase;
 
-  this.directory('demo', 'demo');
-  
-  this.mkdir('doc');
-  this.directory('src', 'src');
-  this.mkdir('src/css');
-  this.mkdir('src/js');
-  this.mkdir('src/js/sys');
-  this.mkdir('src/js/ext');
-  this.mkdir('src/themes');
-  this.mkdir('src/themes/themes1');
-  this.mkdir('src/themes/themes1/css');
-  this.mkdir('src/themes/themes1/images');
-  this.mkdir('src/templates');
-  this.mkdir('src/templates/sys');
-  this.mkdir('src/templates/ext');
-  this.mkdir('trd');
-  this.mkdir('components');
-  this.mkdir('components/comp1');
-  this.mkdir('components/comp1/css');
-  this.mkdir('components/comp1/js');
-  this.mkdir('components/comp1/pages');
+  this.directory('webapp', 'webapp');
   this.directory('test', 'test');
+  this.directory('dist', 'dist');
+
+  this.mkdir('webapp/css');
+  this.mkdir('webapp/js');
+  this.mkdir('webapp/js/sys');
+  this.mkdir('webapp/js/ext');
+  this.mkdir('webapp/themes');
+  this.mkdir('webapp/themes/themes1');
+  this.mkdir('webapp/themes/themes1/css');
+  this.mkdir('webapp/themes/themes1/images');
+  this.mkdir('webapp/templates');
+  this.mkdir('webapp/templates/sys');
+  this.mkdir('webapp/templates/ext');
+  this.mkdir('webapp/trd');
+  this.mkdir('webapp/components');
+  this.mkdir('webapp/components/comp1');
+  this.mkdir('webapp/components/comp1/css');
+  this.mkdir('webapp/components/comp1/js');
+  this.mkdir('webapp/components/comp1/pages');
   console.log('Directories initialization done!');
   
 };

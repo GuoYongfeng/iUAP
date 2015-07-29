@@ -1,7 +1,18 @@
 {
-  "name": "uap-bower",
-  "description": "web development",
-  "version": "1.0.0",
+  "name": "iuap",
+  "version": "0.0.1",
+  "homepage": "",
+  "authors": [
+    ""
+  ],
+  "description": "",
+  "main": "gulpfile.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "iuap generator"
+  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -12,6 +23,7 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.5",
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "require": "~0.3.97"
   }
 }

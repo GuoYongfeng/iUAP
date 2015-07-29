@@ -1,13 +1,26 @@
 {
   "name": "<%= name %>",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "<%= description %>",
   "author": "<%= author %>",
-  "dependencies": {},
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/username/repository.git"
   },
+  "keywords": [
+    "reflux",
+    "react"
+  ],
+  "author": "guoyongfeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "git://github.com/username/repository.git"
+  },
+  "homepage": "git://github.com/username/repository.git",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-copy": "~0.4.1",
