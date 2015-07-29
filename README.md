@@ -8,7 +8,7 @@
 > 如果你还不知道这些或是不知道怎么安装，请自行百度或谷歌之，也可直接联系我guoyff@yonyou.com
 
 ```code
-* npm install genertor-uap -g
-* mkdir myapp && cd myapp
-* yo uap
+npm install genertor-uap -g
+mkdir myapp && cd myapp
+yo uap
 ```
